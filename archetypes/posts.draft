@@ -1,6 +1,11 @@
 ---
 title: "{{ .Name | humanize | title }}"
 date: {{ .Date }}
+weight: 9
 # bookComments: false
 # bookSearchExclude: false
+# bookFlatSection: true
+bookToc: false
+bookHidden: true
+bookCollapseSection: true
 ---
