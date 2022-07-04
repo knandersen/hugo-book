@@ -11,6 +11,7 @@
     <aside class="book-menu">
       <div class="book-menu-content">
         {{ template "menu" . }} <!-- Left menu Content -->
+        <!--{{ partial "docs/taxonomy" . }}-->
       </div>
     </aside>
 
@@ -34,11 +35,11 @@
     </div>
 
     {{ if default true (default .Site.Params.BookToC .Params.BookToC) }}
-    <aside class="book-toc">
+    <!--<aside class="book-toc">
       <div class="book-toc-content">
         {{ template "toc" . }} <!-- Table of Contents -->
       </div>
-    </aside>
+    </aside>-->
     {{ end }}
   </main>
 

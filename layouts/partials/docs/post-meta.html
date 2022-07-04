@@ -1,7 +1,7 @@
 {{ with .Date }}
   <h5>{{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}</h5>
 {{ end }}
-
+<!--
 {{ range $taxonomy, $_ := .Site.Taxonomies }}
   {{ with $terms := $.GetTerms $taxonomy }}
   <div>
@@ -11,7 +11,7 @@
   </div>
   {{ end }}
 {{ end }}
-
+-->
 {{ if .Params.image }}
 <p>
   {{ with .Resources.GetMatch .Params.image }}

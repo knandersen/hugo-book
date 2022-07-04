@@ -101,7 +101,7 @@ ul.pagination {
 
   .book-menu-content {
     width: $menu-width;
-    padding: $padding-16;
+    padding-left: $padding-16;
     background: var(--body-background);
 
     @include fixed;
@@ -167,7 +167,7 @@ body[dir="rtl"] .book-menu {
 }
 
 .book-post {
-  margin-bottom: $padding-16 * 3;
+  margin-bottom: $padding-16 * 10;
 }
 
 .book-header {
@@ -359,5 +359,8 @@ body[dir="rtl"] .book-menu {
   .book-menu .book-menu-content,
   .book-toc .book-toc-content {
     padding: $padding-16 * 2 $padding-16;
+  }
+  .book-page {
+    margin-left: $padding-16 * 2;
   }
 }
