@@ -3,6 +3,15 @@
 {{ $bookSection = "/" }}{{/* Backward compatibility */}}
 {{ end }}
 
+<ul>
+  {{ range .Site.Menus.main }}
+  <li><a class="" href="{{.URL}}" {{ if eq .Params.external true }}target="_blank" rel="noopener noreferrer" {{ end }}>
+      {{ .Name }}
+    </a>
+  </li>
+  {{ end }}
+</ul>
+
 {{ with .Site.GetPage $bookSection }}
 {{ template "book-section-children" (dict "Section" . "CurrentPage" $) }}
 {{ end }}
