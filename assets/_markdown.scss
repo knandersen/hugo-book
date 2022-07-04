@@ -1,7 +1,7 @@
 @import "variables";
 
 .markdown {
-  line-height: 1.6;
+  line-height: 1.7;
 
   // remove padding at the beginning of page
   > :first-child {
@@ -37,6 +37,7 @@
     font-size: 6em;
     background: -webkit-linear-gradient(#00BFFF, #BD88FF);
     background-clip: text;
+    padding-bottom: $padding-8;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -50,6 +51,9 @@
 
   h5 {
     font-size: 0.875em;
+    text-align: right;
+    width: $article-width;
+    color: var(--gray-500)
   }
 
   h6 {
