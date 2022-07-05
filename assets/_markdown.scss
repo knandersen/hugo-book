@@ -224,3 +224,19 @@ figure {
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .markdown {
+    p,
+    h2,
+    h3,
+    h4, 
+    h5, 
+    img, 
+    code,
+    pre,
+    figure {
+    max-width: 100%;
+    }
+  }
+}
