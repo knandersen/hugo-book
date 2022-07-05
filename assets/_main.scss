@@ -287,16 +287,53 @@ body[dir="rtl"] .book-menu {
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-  #menu-control,
-  #toc-control {
-    display: inline;
+  .container {
+    flex-direction: column;
   }
 
   .book-menu {
-    visibility: hidden;
-    margin-inline-start: -$menu-width;
-    font-size: $font-size-base;
-    z-index: 1;
+    flex-direction: column;
+    flex: 0 0 $menu-height-mobile;
+    font-size: $font-size-14;
+
+    nav {
+      width: 100%;
+    }
+
+    .book-menu-content {
+      width: 100%;
+      padding: $padding-16;
+      position: relative;
+
+      ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline;
+          a {
+            margin: $padding-4;
+            display: inline-block;
+          }
+        }
+      }
+
+      .book-search {
+        ul {
+          display: block;
+          li {
+            display: block;
+            a {
+              display: block;
+            }
+            small {
+              margin: $padding-4;
+            }
+          }
+        }
+      }
+      
+    }
   }
 
   .book-toc {
@@ -305,34 +342,6 @@ body[dir="rtl"] .book-menu {
 
   .book-header {
     display: block;
-  }
-
-  #menu-control:focus ~ main label[for="menu-control"] {
-    @include outline;
-  }
-
-  #menu-control:checked ~ main {
-    .book-menu {
-      visibility: initial;
-    }
-
-    .book-menu .book-menu-content {
-      transform: translateX($menu-width);
-      box-shadow: 0 0 $padding-8 rgba(0, 0, 0, 0.1);
-    }
-
-    .book-page {
-      opacity: 0.25;
-    }
-
-    .book-menu-overlay {
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
   }
 
   #toc-control:focus ~ main label[for="toc-control"] {

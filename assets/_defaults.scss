@@ -19,9 +19,10 @@ $article-width: 34rem !default;
 
 $header-height: 3.5rem !default;
 $menu-width: 16rem !default;
+$menu-height-mobile : 10rem !default;
 $toc-width: 16rem !default;
 
-$mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width  !default;
+$mobile-breakpoint: $menu-width + $article-width * 1.2 + $toc-width  !default;
 
 $hint-colors: (
   info: #6bf,
