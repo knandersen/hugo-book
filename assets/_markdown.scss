@@ -32,6 +32,11 @@
     }
   }
 
+  h2,h3,h4,h5,h6 {
+    width: $article-width;
+    font-weight: bolder;
+  }
+
   h1 {
     font-weight: bolder;
     font-size: 6em;
@@ -41,15 +46,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
-  h2 {
-    font-weight: bolder;
-  }
-
-  h4,
+  
   h5,
   h6 {
-    font-weight: bolder;
     text-align: center;
   }
 
