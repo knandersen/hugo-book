@@ -14,8 +14,8 @@ $border-radius: $padding-4  !default;
 $body-font-weight: normal !default;
 
 $body-min-width: 20rem !default;
-$container-max-width: 80rem !default;
-$article-width: 34rem !default;
+$container-max-width: 40rem !default;
+$article-width: 40rem !default;
 
 $header-height: 3.5rem !default;
 $menu-width: 16rem !default;
@@ -36,11 +36,11 @@ $hint-colors: (
   --gray-200: #e9ecef;
   --gray-500: #adb5bd;
 
-  --color-link: #0055bb;
-  --color-visited-link: #8440f1;
+  --color-link: #CD0049;
+  --color-visited-link: #CD0049;
 
-  --body-background: white;
-  --body-font-color: black;
+  --body-background: #efefef;
+  --body-font-color: #222;
 
   --icon-filter: none;
 
@@ -55,11 +55,11 @@ $hint-colors: (
 --gray-200: rgba(255, 255, 255, 0.2);
 --gray-500: rgba(255, 255, 255, 0.5);
 
---color-link: #84b2ff;
---color-visited-link: #b88dff;
+--color-link: #ff3a7f;
+--color-visited-link: #ff3a7f;
 
---body-background: #343a40;
---body-font-color: #e9ecef;
+--body-background: #222;
+--body-font-color: #efefef;
 
 --icon-filter: brightness(0) invert(1);
 
