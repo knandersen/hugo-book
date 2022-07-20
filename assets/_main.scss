@@ -165,7 +165,7 @@ body[dir="rtl"] .book-menu {
 .book-page {
   min-width: $body-min-width;
   flex-grow: 1;
-  padding: $padding-16;
+  //padding: $padding-16;
 }
 
 .book-post {
@@ -291,6 +291,7 @@ body[dir="rtl"] .book-menu {
 @media screen and (max-width: $mobile-breakpoint) {
   .container {
     flex-direction: column;
+    padding: $padding-16;
   }
 
   .book-menu {
@@ -369,9 +370,10 @@ body[dir="rtl"] .book-menu {
   .book-page,
   .book-menu .book-menu-content,
   .book-toc .book-toc-content {
-    padding: $padding-16 * 2 $padding-16;
+    //padding: $padding-16 * 2 $padding-16;
+    padding-top: $padding-16 * 2;
   }
   .book-page {
-    margin-left: $padding-16 * 2;
+    //margin-left: $padding-16 * 2;
   }
 }

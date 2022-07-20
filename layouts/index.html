@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ range (.Paginate (where .Site.Pages "Params.type" "pages")).Pages }}
+{{ range (.Paginate (where .Site.Pages "Params.title" "Home")).Pages }}
 <article class="markdown book-post">
     <!--<h1>
         <a href="{{ .RelPermalink }}">{{ partial "docs/title.html" . }}</a>

@@ -15,9 +15,9 @@
     {{- $page := .Page.GetPage $path }}
     {{- if $page }}
       {{- $destination = $page.RelPermalink }}
-      {{- if $url.Fragment }}
+      <!--{{- if $url.Fragment }}
         {{- $destination = print $destination "#" $url.Fragment }}
-      {{- end }}
+      {{- end }}-->
     {{- else if fileExists (print .Page.File.Dir .Destination) }}
       <!-- Nothing -->
     {{- else -}}

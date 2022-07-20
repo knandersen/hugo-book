@@ -38,16 +38,17 @@
 
   h1 {
     font-size: 6em;
+    width: $article-width * 1.4;
+    margin-top: 0.4em;
   }
   
-  h5,
   h6 {
     text-align: center;
   }
 
   h5 {
-    font-size: 0.875em;
-    text-align: right;
+    font-weight: normal;
+    font-size: 1rem;
     width: $article-width;
     color: var(--gray-500)
   }
