@@ -2,6 +2,7 @@
 
 .markdown {
   line-height: 1.7;
+  width: $article-width;
 
   // remove padding at the beginning of page
   > :first-child {
@@ -33,7 +34,6 @@
   }
 
   h2,h3,h4,h5,h6 {
-    width: $article-width;
     font-weight: bolder;
   }
 
@@ -45,6 +45,9 @@
     padding-bottom: $padding-8;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width:150%;
+    max-width:100vw;
+
   }
   
   h5,
@@ -55,8 +58,7 @@
   h5 {
     font-size: 0.875em;
     text-align: right;
-    width: $article-width;
-    color: var(--gray-500)
+    color: var(--gray-500);
   }
 
   h6 {
@@ -107,7 +109,6 @@
 
   p {
     word-wrap: break-word;
-    width : $article-width;
   }
 
   blockquote {
@@ -214,7 +215,6 @@ figure {
 }
 
 .youtube {
-  width: $article-width;
   height: $article-width*0.5625;
   iframe {
     width: 100%;
