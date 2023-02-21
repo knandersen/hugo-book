@@ -20,6 +20,8 @@
 <ul>
   {{ range (where .Section.Pages "Params.bookhidden" "ne" true) }}
   {{ if .IsSection }}
+</ul>
+<ul class="menu-page">
   <li {{- if .Params.BookFlatSection }} class="book-section-flat" {{ end -}}>
     <a {{ if .Page }}href="{{ .Page.RelPermalink }}" {{ else }}role="button" {{ end }}>{{ template
       "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage)

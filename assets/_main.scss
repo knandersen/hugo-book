@@ -307,6 +307,11 @@ body[dir="rtl"] .book-menu {
       padding: $padding-16;
       position: relative;
 
+      .menu-page {
+        margin-top:$padding-16;
+        display: block;
+      }
+
       ul {
         display: inline;
         margin: 0;
