@@ -1,6 +1,3 @@
-<!-- Panelbear -->
-<script async src="https://cdn.panelbear.com/analytics.js?site={{ $.Site.Params.panelbearAnalytics }}"></script>
-<script>
-    window.panelbear = window.panelbear || function () { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-    panelbear('config', { site: {{ $.Site.Params.panelbearAnalytics }} });
-</script>
+<!-- Umami -->
+<script async defer data-website-id="{{ $.Site.Params.UmamiAnalytics }}"
+    src="https://umami-v19w.onrender.com/umami.js"></script>
